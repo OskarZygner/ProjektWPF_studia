@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProjektWPF.DeleteQuizWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Usuń Quiz" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Wybierz quiz do usunięcia:" FontSize="16" Margin="0,0,0,10" />
+          
+            <ListBox x:Name="QuizListBox" DisplayMemberPath="Title" Height="200" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button Content="Usuń Wybrany" Width="120" Margin="5" Click="DeleteSelected_Click"/>
+                <Button Content="Usuń Wszystko" Width="120" Margin="5" Click="DeleteAll_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
