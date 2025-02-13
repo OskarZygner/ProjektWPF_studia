@@ -9,8 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Background.jpg" />
+    <None Remove="DALL·E 2025-02-13 21.02.55 - A simple, clean background for a quiz app with a smooth gradient of blue and purple hues. No shapes, text, or decorative elements—just a soft, uniform.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background.jpg" />
+    <Resource Include="DALL·E 2025-02-13 21.02.55 - A simple, clean background for a quiz app with a smooth gradient of blue and purple hues. No shapes, text, or decorative elements—just a soft, uniform.webp" />
   </ItemGroup>
 
 </Project>

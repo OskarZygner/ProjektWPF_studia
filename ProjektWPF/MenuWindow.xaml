@@ -1,12 +1,44 @@
 ﻿<Window x:Class="ProjektWPF.MenuWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Menu" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+        Title="Menu" Height="700" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Cursor="Pen">
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Rozpocznij Quiz" Width="200" Height="50" Margin="0,10" Click="StartQuizMenuItem_Click"/>
-            <Button Content="Dodaj Quiz" Width="200" Height="50" Margin="0,10" Click="AddQuizMenuItem_Click"/>
-            <Button Content="Usuń Quiz" Width="200" Height="50" Margin="0,10" Click="DeleteQuizMenuItem_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Background.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="291" Width="226" Margin="244,225,0,0">
+            <Button Content="Rozpocznij Quiz" Width="173" Height="65" Click="StartQuizMenuItem_Click" FontFamily="Snap ITC" Foreground="#FF1A141B" FontSize="19" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.521"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.491"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Dodaj Quiz" Width="187" Height="65" Margin="0,10" Click="AddQuizMenuItem_Click" FontFamily="Snap ITC" Foreground="#FF1A141B" FontSize="19">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button Content="Usuń Quiz" Width="187" Height="65" Click="DeleteQuizMenuItem_Click" FontFamily="Snap ITC" Foreground="#FF1A141B" FontSize="19">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -44,6 +44,7 @@ namespace ProjektWPF
                                      FROM Question 
                                      ORDER BY QuestionId";
                     SqlCommand cmd = new SqlCommand(query, conn);
+                    
 
                     using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
                     {
